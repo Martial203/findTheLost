@@ -1,0 +1,21 @@
+<div>
+  <form>
+    <h1>Authentification</h1>
+    <p class="input_p">
+      <mat-form-field appearance="fill" class="mat-form-field">
+        <mat-label>Adresse mail</mat-label>
+        <mat-icon matSuffix>email</mat-icon>
+        <input type="email" matInput name="email" required id="email">
+      </mat-form-field>
+    </p>
+    <p class="input_p">
+      <mat-form-field appearance="fill" class="mat-form-field">
+        <mat-label>Mot de passe</mat-label>
+        <mat-icon matSuffix>lock</mat-icon>
+        <input type="password" matInput name="email" required id="password">
+      </mat-form-field>
+    </p>
+    <p class="signup_p">Pas encore de compte ? Sans soucis, <a [routerLink]="['/main-page', { outlets: { 'myaccount': ['registration'] } }]">inscrivez vous ici !</a></p>
+    <p class="button_p"><button mat-flat-button color="primary" (click)="onSubmit()">Se connecter</button></p>
+  </form>
+</div>

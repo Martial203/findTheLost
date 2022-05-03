@@ -1,0 +1,2 @@
+Todo list for find the lost front end App
+- Show a modal when pressing on a item in the items list

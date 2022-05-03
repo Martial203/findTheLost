@@ -1,0 +1,44 @@
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(2,2,2,0.05);
+  height: 85vh;
+  h1{
+    text-align: center;
+  }
+  .messages{
+    display: flex;
+    flex-direction: column;
+    padding: auto 12px auto 12px;
+    overflow: auto;
+    height: 70vh;
+    width: 80%;
+    p{
+      padding: 8px 5px 8px 12px;
+      margin-bottom: 8px;
+      margin-right: 15px;
+    }
+    .sendee{
+      align-self: flex-start;
+      background-color: rgba(70,70,70,0.3);
+      max-width: 70%;
+    }
+    .sender{
+      align-self: flex-end;
+      background-color: rgba(140,140,140,0.3);
+      max-width: 70%;
+    }
+  }
+  form{
+    flex: 1;
+    margin-top: 6px;
+    width: 80%;
+    background-color: rgba(255,255,255,0.7);
+    .typing_area{
+      width: 100%;
+      textarea{
+      }
+    }
+  }
+}

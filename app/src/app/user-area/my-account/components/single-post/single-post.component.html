@@ -1,0 +1,13 @@
+<main>
+    <figure><app-caroussel [images]='[0, 1, 2, 3, 4, 5]'></app-caroussel></figure>
+    <div class="item_informations">
+        <h3>Informations à propos de l'objet</h3>
+        <p>Nom de l'objet: {{ data.value[0] }}</p>
+        <p>Découvert le : 02 Mai 2022 aux environs de 15h30</p>
+        <p>Lieu de découverte : Café</p>
+    </div>
+    <div class="buttons">
+        <div class="button1"><button mat-flat-button color="primary">Contacter l'auteur</button></div>
+        <div class="button2"><button mat-flat-button color="warn" (click)="onClose()">Fermer</button></div>
+    </div>
+</main>

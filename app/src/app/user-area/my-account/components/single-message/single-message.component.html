@@ -1,0 +1,18 @@
+<section>
+  <h1>Messages</h1>
+  <div class="messages">
+    <p *ngFor="let i of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]" [class]="(i%2==0) ? 'sender': 'sendee'">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Etiam facilisis condimentum diam sit amet vulputate. 
+        Sed ullamcorper semper est, eget consequat lorem iaculis ac. 
+        Nunc ac augue accumsan, porta ante a, placerat dui. Sed eu tempor urna. 
+        Nullam est augue, scelerisque eget mattis ut, vestibulum at sapien.
+    </p>
+  </div>
+  <form>
+    <mat-form-field class="typing_area">
+      <textarea matInput placeholder="Tapez votre message ici..."></textarea>
+      <button matSuffix mat-mini-fab color="primary" type="reset"><mat-icon matSuffix>send</mat-icon></button>
+    </mat-form-field>
+  </form>
+</section>

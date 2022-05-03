@@ -1,0 +1,10 @@
+<div>
+  <button *ngFor="let offer of tab" (click)="onItemClick()" class="card">
+    <figure><img src="/assets/avocats.png"></figure>
+    <p>Nom de l'objet</p>
+    <p>Lieu</p>
+    <p>Date</p>
+    <p *ngIf="!mine"><button mat-flat-button color="primary">Contacter l'auteur</button></p>
+    <p *ngIf="mine"><button mat-flat-button color="warn" >Supprimer le post</button></p>
+  </button>
+</div>

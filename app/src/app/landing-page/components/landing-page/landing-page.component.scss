@@ -1,0 +1,21 @@
+.main_div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  div{
+    // border: solid rgba(120,120,120,0.3);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px 40px 20px 40px;
+    h1{
+      text-align: center;
+    }
+    .p_button{
+      text-align: center;
+      button{
+        background-color: rgba(120,120,1210,0.3);
+      }
+    }
+  }
+}

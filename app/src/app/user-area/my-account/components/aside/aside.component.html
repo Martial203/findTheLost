@@ -1,0 +1,7 @@
+<ul>
+  <a mat-flat-button [routerLink]="['/main-page', { outlets: { myaccount: ['my-account', 'new-item'] } }]" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><li>Nouveau post <button mat-mini-fab color="primary"><mat-icon>add</mat-icon></button></li></a>
+  <a mat-flat-button [routerLink]="['/main-page', { outlets: { myaccount: ['my-account', 'my-posts'] } }]" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><li>Mes posts</li></a>
+  <a mat-flat-button [routerLink]="['/main-page', { outlets: { myaccount: ['my-account', 'items-list'] } }]" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><li>Tous les articles</li></a>
+  <a [matBadge]="(true)? 1: 2" mat-flat-button [routerLink]="['/main-page', { outlets: { myaccount: ['my-account', 'messages'] } }]" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><li>Mes messages</li></a>
+  <a mat-flat-button routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><li>Me déconnecter</li></a>
+</ul>

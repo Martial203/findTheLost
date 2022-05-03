@@ -1,0 +1,27 @@
+div{
+    padding: 80px;
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 40%;
+        margin: auto;
+        padding: 40x;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        .input_p{
+            width: 70%;
+            .mat-form-field{
+                width: 100%;
+            }
+        }
+        h1{
+            margin: 35px;
+        }
+        .button_p{
+            margin: 20px;
+            margin-bottom: 30px;
+        }
+    }
+}

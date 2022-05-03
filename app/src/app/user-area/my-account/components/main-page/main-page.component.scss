@@ -1,0 +1,11 @@
+main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  aside{
+    flex: 1;
+  }
+  div{
+    flex: 5;
+  }
+}

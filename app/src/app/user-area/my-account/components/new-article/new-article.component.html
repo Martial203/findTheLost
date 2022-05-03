@@ -1,0 +1,35 @@
+<div>
+    <form>
+        <h1>Nouvel objet</h1>
+        <p class="form_description">Fournissez les informations requises afin de publier cet objet.</p>
+        <p class="input_p">
+            <mat-form-field appearance="fill" class=".mat-form-fied">
+                <mat-label>Nom de l'objet</mat-label>
+                <input type="text" matInput required placeholder="Comment appele t-on ">
+            </mat-form-field>
+        </p>
+        <p class="input_p">
+            <mat-form-field appearance="fill" class=".mat-form-fied">
+                <mat-label>Date de découverte</mat-label>
+                <input matInput placeholder="" [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </p>
+        <p class="input_p">
+            <mat-form-field appearance="fill" class=".mat-form-fied">
+                <mat-label>Lieu de découverte</mat-label>
+                <input type="text" required matInput placeholder="">
+            </mat-form-field>
+        </p>
+        <p class="input_p">
+            <mat-form-field appearance="fill" class=".mat-form-fied">
+                <mat-label>Informations complémentaires</mat-label>
+                <textarea type="text" matInput placeholder=""></textarea>
+            </mat-form-field>
+        </p>
+        <p class="button_p">
+            <button mat-flat-button color="primary">Publier</button>
+        </p>
+    </form>
+</div>

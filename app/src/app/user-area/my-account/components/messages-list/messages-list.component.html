@@ -1,0 +1,13 @@
+<div class='messages_list'>
+  <a [routerLink]="['/main-page', { outlets: { myaccount: ['my-account', 'messages', i] } }]" mat-flat-button *ngFor="let i of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]">
+    <div class="message_card">
+      <figure><img src="/assets/avocats.png" alt="profile"></figure>
+      <div class='infos'>
+        <p>Détenteur de l'article : <br>
+        Nom <br>
+        Trouvé le : 01/01/1972 à FindTheLost</p>
+      </div>
+    </div>
+    <hr *ngIf="i!==9">
+  </a>
+</div>
